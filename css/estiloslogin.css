@@ -1,0 +1,211 @@
+:root {
+    --darkgray: #242220;
+    --gray: #978b7b;
+    --orange: #ff9000;
+    --cian: #037c03;
+    --yellow: #dca305;
+    --terracota: rgb(238, 93, 9);
+    --white: #fff;
+    --green: #1eaa25;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-indent: 0;
+    font-family: 'Manjari', sans-serif;
+ 
+  }
+  
+  
+  body {
+    
+    background-image: url("images/fondo.png");
+    background-repeat: repeat;
+    background-position: 0 0;
+    line-height: 1.42857143;
+    color: #878787;
+    padding-top: 80px;
+   
+  }
+  
+
+
+
+.contenedor-form {
+    background: var(--gray);
+    max-width: 500px;
+    width: 90%;
+    margin: 48px auto;
+    border-radius: 5px;
+    color: var(--white);
+    position: relative;
+    padding-bottom: 25px;
+    
+  
+}
+
+.header-tittle {
+    padding: 5px;
+    text-align: left;
+    font-size: 1.5em;
+  
+}
+
+.contenedor-form .toggle {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 1px solid var(--orange);
+    border-bottom: 1px solid var(--orange);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor-form .toggle:hover {
+    border-top: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--yellow);
+}
+
+.contenedor-form .toggle span {
+    letter-spacing: 1px;
+}
+
+.contenedor-form h2 {
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"],
+.contenedor-form input[type="email"] {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    background: var(--gray);
+    color: var(--white);
+    border: none;
+    border-radius: 2px;
+    border-bottom: 1px solid var(--white);
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight:normal;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus,
+.contenedor-form input[type="email"]:focus {
+    border-bottom: 4px solid var(--white);
+    
+}
+
+.contenedor-form input[type="submit"] {
+    background: #FF851B;
+    color: var(--white);
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 3px;
+    
+    
+}
+
+.contenedor-form input[type="submit"]:hover {
+    background: var(--yellow);
+}
+
+.contenedor-form .reset-password {
+    
+    
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+       
+   
+
+}
+
+/*
+.contenedor-form .reset-password a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid var(--orange);
+    border-radius: 3px;
+    padding: 10px 10px;
+    
+
+    
+}*/
+
+.contenedor-form .formulario {
+    display: none;
+    padding: 20px 30px;
+}
+
+.contenedor-form .formulario:nth-child(2) {
+    display: block;
+}
+
+input::placeholder {
+    color: var(--white); }
+
+
+
+.contenedor-form .close {
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        background: none;
+        text-align: center;
+        cursor: pointer;
+        transition: all .5s ease;
+        padding-top: 4px;
+        border: none;
+        text-decoration: none;
+    }
+    
+    .contenedor-form .close:hover {
+        border-top: 2px solid var(--yellow);
+        border-bottom: 2px solid var(--yellow);
+    }
+
+
+
+    .mensaje {
+       
+        display: grid;
+        align-items: center;
+        padding: 10px;
+        margin-top: 10px ;
+        background: none;
+        color: var(--white);
+        width: 100%;
+        border: none;
+        font-weight: normal;
+        letter-spacing: 1px;
+        text-align: center;
+        position: absolute;
+        opacity:0;
+        color:var(--white);
+      
+    }

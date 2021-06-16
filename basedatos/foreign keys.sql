@@ -1,0 +1,2 @@
+ALTER TABLE productos ADD FOREIGN KEY (producto_categoria_id) REFERENCES categorias (categoria_id) ON UPDATE CASCADE ON DELETE RESTRICT 
+ALTER TABLE productos ADD FOREIGN KEY (producto_proveedor_id) REFERENCES proveedores (proveedor_id) ON UPDATE CASCADE ON DELETE RESTRICT 

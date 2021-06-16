@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estiloscarrito.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap" rel="stylesheet">
+   
+    <title>Tienda</title>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+     <div class="nav-container">
+        <nav class="navbar">
+            <h1 id="navbar-logo">
+                FERIA Cooperativa
+            </h1>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-links">About...</a></li>
+                <li><a href="#" class="nav-links">Mis productos</a></li>
+                <li><a href="pedidos.html" class="nav-links">Pedidos del día</a></li>
+                <li><a href="login.html" class="nav-links nav-links-btn" >Login</a></li>
+          
+            </ul>
+          
+
+        </nav> 
+     </div>
+    <!-- Navbar --> 
+
+     <div class="carrito-container">
+         
+        <div class = "contenedor-listado-productos" id="listado-productos">
+         Cantidad de Productos: 0          
+        </div>
+        <div>
+         </div>
+       
+     </div>
+
+     <div class = "contenedor-listado-productos">
+        <a id="totalarriba" 
+           href="#"  
+           class="btn-total";
+           return false;">Total: $ 0 </a>
+    </div>
+
+     <div class="container-footer">
+
+        <div class = "contenedor-listado-productos">
+            <a id="total" 
+               href="#"  
+               class="btn-total";
+               return false;">Total: $ 0</a>
+        </div>
+
+
+        <div class = "contenedor-listado-productos">
+            <a class="btn-hacer-pedido";
+               href="#"  
+               onclick="grabarPedido()" 
+               id="btn-hacer-pedido";
+               return false;">Hacer Pedido</a>
+               
+        </div>
+
+        <div class = "contenedor-listado-productos">
+
+            <a id="volver" 
+            href="index.html" 
+            class="btn-hacer-pedido volver";
+            return false;">Volver</a>
+
+            
+        </div>
+
+     </div>
+
+
+
+     
+    <script src="js/funcionalidadcarrito.js"></script>
+</body>
+</html>

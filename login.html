@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estiloslogin.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap" rel="stylesheet">
+   
+    <title>Login</title>
+
+</head>
+<body>
+
+
+
+    <div class="contenedor">
+        <div class="contenedor-form" onsubmit="login(event)">
+            
+            <div>
+              <a class="close" href="index.html" class="nav-links">X</a>
+            </div>
+    
+            
+            <div class="formulario">
+                <h2 class= "header-tittle">Login</h2>
+               
+                <form action="#">
+                    <label for="text">Usuario</label>
+                    <input type="text" id="usuario" required>
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" maxlength=10 required>
+                    <input type="submit" value="Iniciar Sesión">
+                    
+                </form>
+                <div class="mensaje" id="mensaje">
+                    <label>Mensaje</label>
+                
+                </div>               
+            </div>
+           
+          
+        </div>
+
+    </div>
+
+    <script src="js/funcionalidadlogin.js"></script>
+</body>
+</html>

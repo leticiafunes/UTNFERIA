@@ -1,0 +1,25 @@
+ /var/lib/phpMyAdmin/save/
+
+Inspiración paleta: https://tualmacen.com.ar/productos.php?oferta=4#
+
+Tutorial YouTube NAvBAr:
+https://www.youtube.com/watch?v=yFWAOzwovrQ
+
+Login
+https://www.youtube.com/watch?v=37IN_PW5U8E
+
+Nodejs y Mysql, Aplicación Completa (Login, Registro, CRUD, ES6+ y Más )
+https://www.youtube.com/watch?v=qJ5R9WTW0_E
+
+
+-- Connection Id: 5
+-- User: event_scheduler
+-- Host: localhost
+-- DB: None
+-- Command: Daemon
+-- Time: 1370560
+-- State: Waiting on empty queue
+
+
+Conexión basica a Bases de datos
+https://www.youtube.com/watch?v=zrwHzEVpSKw
