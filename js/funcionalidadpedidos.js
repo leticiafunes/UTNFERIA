@@ -59,17 +59,17 @@ function mostrarPedidos () {
     
   }
   else {
-    contenedorPedidos.innerHTML = 'Aún no hay productos';
+    contenedorPedidos.innerHTML = '- Aún no hay pedidos -';
        
   }
 
 
   
   const label_total = document.getElementById("total");
-  label_total.innerHTML = "Total pedido: $ " + monto_total_pedidos ;
+  label_total.innerHTML = "Total pedidos: $ " + monto_total_pedidos ;
 
   const label_total_arriba = document.getElementById("totalarriba");
-  label_total_arriba.innerHTML = "Total pedido: $ " + monto_total_pedidos ;
+  label_total_arriba.innerHTML = "Total pedidos: $ " + monto_total_pedidos ;
 
 }
 
