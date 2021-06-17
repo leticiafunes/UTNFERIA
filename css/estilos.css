@@ -197,11 +197,29 @@ body {
 }
 
 
+ .btn-buscar {
+   display: flex;
+ }
+
+
   .input-buscar {
     width: 100%;
+    border: none;
+    height: 30px;
+    margin: 10px;
+    flex-direction: row;
+    border-radius: 4px;
+    
   }
+
+  #input-buscar > input[type="search"]:focus {
+    width: 200px;
+    outline: none;
+ }
  
- 
+ .icono{ 
+   margin-top: 15px;
+ }
 
 
 
@@ -360,7 +378,7 @@ display:inline;
 
   .navbar-filter {
     display: grid;
-    grid-template-columns:   0.1fr  1fr auto 1fr;
+    grid-template-columns:  0.1fr  0.5fr auto 1fr;
     align-items: center;
     height: 100%;
     width: 90%;

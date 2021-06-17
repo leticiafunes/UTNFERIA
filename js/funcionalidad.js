@@ -5,6 +5,13 @@ const menuLinks = document.querySelector ('.nav-menu');
 const menufilter = document.querySelector('#mobile-filter-menu');
 const menuLinksfilter= document.querySelector ('.nav-filter-menu');
 
+const buscar= document.querySelector ('#input-buscar');
+
+buscar.addEventListener("click", function() {
+  buscar.style.outline="none";
+  buscar.style.border = "thin solid orange";
+ });
+
 
 menu.addEventListener('click', function() {
     menu.classList.toggle('is-active');
