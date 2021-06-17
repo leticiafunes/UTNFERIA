@@ -35,10 +35,10 @@ menufilter.addEventListener('click', function() {
 /*Carrito*/
 
 
-let cantidad_productos_carrito;
-let carrito_con_productos;
-let total;
-let monto_total;
+let cantidad_productos_carrito=0;
+let carrito_con_productos=0;
+let total=0;
+let monto_total=0;
 
 leerStorage();
 
@@ -46,7 +46,7 @@ leerStorage();
 function mostrarCantidad () {
 
   let cantidad = document.getElementById("label-cant-productos");
-  cantidad.innerHTML =  "Cant. Prod: " +  cantidad_productos_carrito + " - Total: $ " + total;
+  cantidad.innerHTML =  "Cant.: " +  cantidad_productos_carrito + " - Total: $ " + total;
 }
 
 mostrarCantidad ();
