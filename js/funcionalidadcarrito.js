@@ -50,9 +50,10 @@ function mostrarProductosCarrito () {
       contenedorProductos.innerHTML = listado;
 
       carrito_con_productos.forEach(function(elementoCarrito){
-      listado += " * " + elementoCarrito.cantidad + " - "  + elementoCarrito.nombre + ' ' + ': $ ' + elementoCarrito.precio + "<br>";
+      listado += elementoCarrito.cantidad + " - "  + elementoCarrito.nombre + ' ' + ': $ ' + elementoCarrito.precio + "<br>";
   
       });
+      
       contenedorProductos.innerHTML =   listado;
      
      

@@ -21,7 +21,7 @@
   
   body {
     
-    background-image: url("images/fondo.png");
+    background-image: url("../Images/fondo.png");
     background-repeat: repeat;
     background-position: 0 0;
     line-height: 1.42857143;
@@ -30,6 +30,10 @@
    
   }
   
+  .contenedor{
+    margin: auto;
+    width: 80%;
+  }
 
 
 
