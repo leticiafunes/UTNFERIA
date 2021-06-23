@@ -377,7 +377,7 @@ body {
   text-align: center;
   line-height: 60px;
  
-  background-color: var(--orange);
+  background-color: var(--darkgray);
   padding: 6px 16px;
   padding-top: 10px;
   border-radius: 4px;
@@ -401,7 +401,7 @@ body {
 
 
 .volver {
-  background: var(--gray);
+  background: var(--orange);
 }
 
 

@@ -33,12 +33,12 @@
 #ver-pedido {
 
 
-    color: var(--darkgray);
+    color: var(--white);
     padding: 4px 14px;
     padding-top: 11px;
     border-radius: 4px;
     transition: all 0.3s easy-out;
-    background: var(--orange);
+    background: var(--darkgray);
     text-decoration: none;
 
 }
@@ -141,7 +141,7 @@ body {
   width: 100%;
   justify-self: end;
   position: absolute;
-  top: 85px;
+  top: 81px;
   background: var(--gray);
   left: -100%;
   opacity: 0;
@@ -169,7 +169,7 @@ body {
   background-color: var(--gray);
   color: var(--white);
   transition: all 0.4s easy-out;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .nav-links-btn:hover {
@@ -220,11 +220,11 @@ body {
   grid-template-columns: 1;
   text-align: center;
   transition: all 0.5s ease;
-  width: 20%px;
-  min-width: 100px;
+  width: 130px;
   justify-self: start;
   position: absolute;
   left: -100%;
+  border-radius: 4px;  
 }
 
 .filter-link {
