@@ -53,7 +53,7 @@ mostrarCantidad ();
 
 
 
-function agregarProducto (id_producto, producto_nombre, producto_precio) {
+function agregarProducto (id_producto, producto_nombre, producto_precio, cantidad) {
  
   const producto = traer_producto (id_producto);
  
