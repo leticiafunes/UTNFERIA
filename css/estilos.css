@@ -158,8 +158,13 @@ body {
   width: 100%;
   display: table;
   padding-top: 10px;
-
 }
+
+.filter-link {
+
+  padding-top: 15px;
+  width: 110px;
+  }
 
 .nav-links-btn {
   
@@ -181,6 +186,8 @@ body {
   color: var(--darkgray);
   transition: all 0.4s easy-out; 
 }
+
+
 
 
 /*Filtros*/
@@ -220,21 +227,21 @@ body {
   grid-template-columns: 1;
   text-align: center;
   transition: all 0.5s ease;
-  width: 130px;
+  width: 110px;
   justify-self: start;
   position: absolute;
   left: -100%;
-  border-radius: 4px;  
+  border-radius: 4px;   
+  grid-auto-rows: 50px;
+
 }
 
-.filter-link {
-  padding-left: 10px;
-  padding-right: 10px;     
- }
 
- 
+
+
+
 .icono{ 
-  margin-top: 1px;
+  margin-top: 5px;
 }
 
 .btn-buscar {
@@ -244,7 +251,7 @@ body {
 
 
 .input-buscar {
-  width: 100%;
+  width: 150px;
   border: none;
   height: 30px;
   margin: 10px;
@@ -290,14 +297,9 @@ body {
 }
 
 
-.filter-link {
-color: var(--white);
-text-decoration: none;
-text-align: center;
-line-height: 60px;
-width: 100%;
-display:inline;
-}
+
+
+
 
 .nav-links:hover {
  
@@ -345,6 +347,9 @@ display:inline;
  
 }
 
+.nav-filter-menu {
+  background-color: var(--gray);
+}
 
 /*Carrito*/
 
@@ -468,7 +473,7 @@ display:inline;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
+    height: 60px;
   
   }
   
@@ -660,7 +665,7 @@ display:inline;
 
   
 
-  }
+
   
 
 
@@ -714,7 +719,7 @@ display:inline;
     .navbar-filter {
      
       grid-template-columns:  0.1fr  0.5fr auto 1fr;
-      width: 90%;
+      width: 100%;
       border-bottom: none ;
       border-bottom-color: none;   
     }
@@ -742,22 +747,23 @@ display:inline;
     }
   
     .nav-filter-menu {
-      display: grid;
-      grid-template-columns: repeat(5, auto);
-      text-align: center;
-      left: 100%;
+      display: flex;
       opacity: 1;
       position: static;
+      background-color: var(--ligthgray);
+      width: 90%;
+         
+   
     }
   
   
     .nav-filter-menu.active {
-     background: var(--gray);
-    left: 0;
-    opacity: 1;
+
     transition: all 0.5s easy;
-    top: 150px;
     position: static;
+    background-color: var(--ligthgray);
+    
+
   
   }
   
@@ -801,6 +807,7 @@ display:inline;
     
     
     
+    
   
   }
     
@@ -831,6 +838,18 @@ display:inline;
   
   
   }
+
+  
+.filter-link {
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  display:inline;
+  background: var(--ligthgray);
+  min-width: 80px;
+  }
+  
   
   
   }
@@ -845,3 +864,7 @@ display:inline;
       font-size: 1.5em;
       }
    }
+
+   .filter-selected {
+    background: var(--green);
+  }

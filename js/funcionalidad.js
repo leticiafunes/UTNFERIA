@@ -1,3 +1,25 @@
+$(document).ready(function () {
+
+  $('.nav-filter-menu .filter-link[category = "0"]').addClass('filter-selected');
+
+  
+  $('.filter-link').click (function() {
+
+    let categoria = $(this).attr('category');
+    
+    $('.filter-link').removeClass('filter-selected');  
+    $(this).addClass('filter-selected');
+ 
+    $('.producto').hide();
+
+    if (categoria != "0") {$('.producto[category="'+categoria+'"]').show();}
+    else {$('.producto').show();}
+  
+ });
+ 
+
+})
+
 /*Toggle*/
 
 const menu = document.querySelector('#mobile-menu');
