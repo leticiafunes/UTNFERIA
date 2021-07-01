@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <link href="css/estilosnavegacion.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4a5d6c3d59.js" crossorigin="anonymous"></script>
@@ -43,45 +44,50 @@
    </div>
 <!-- Navbar --> 
 
-   <!-- Navbar de filtros -->
-   <div class="nav-filter-container">
-    <nav class="navbar-filter">
-      <div id="navbar-filter-logo">
-      <span class="icono" id="icono-buscar">
-      </span>
-      </div>
+<!-- Navbar de filtros -->
+<div class="nav-filter-container">
+  <nav class="navbar-filter">
+    <div id="navbar-filter-logo">
 
-      <div class="btn-buscar">
-        <i class="fas fa-search icono"></i>
-        <input type="search" class="input-buscar" placeholder="Buscar" name="input-buscar" id="input-buscar" />
-        
+    </div>
 
-      
-      </div>
-       
-        <div class="menu-filter-toggle" id="mobile-filter-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-
-        <div class="nav-filter-menu">
-          <a href="#" category="0" class="nav-links filter-link">Todos</a>
-          <a href="#" category="1" class= "nav-links filter-link">Verdulería</a>
-          <a href="#" category="3" class= "nav-links filter-link">Envasados</a>
-          <a href="#" category="4" class= "nav-links filter-link">Papelería</a>
-          <a href="#" category="5" class= "nav-links filter-link">Amasados</a>
-          <a href="#" category="6" class= "nav-links filter-link">Servicios</a>
+    <div class="btn-buscar">
     
-        </div>
+      <input type="search" class="input-buscar" placeholder="Buscar" name="input-buscar" id="input-buscar" />
+      
+      <div id="icono-buscar">
+           <i class="fas fa-search icono" ></i>
+      </div>
+      
+ 
+    
+    
+    </div>
+     
+      <div class="menu-filter-toggle" id="mobile-filter-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+
+      <div class="nav-filter-menu">
+        <a href="#" category="0" class=" filter-link">Todos</a>
+        <a href="#" category="1" class= "filter-link">Verdulería</a>
+        <a href="#" category="3" class= "filter-link">Envasados</a>
+        <a href="#" category="4" class= "filter-link">Papelería</a>
+        <a href="#" category="5" class= "filter-link">Amasados</a>
+        <a href="#" category="6" class= "filter-link">Servicios</a>
+  
+      </div>
 
 
 
 
 
-    </nav> 
-   </div>
+  </nav> 
+ </div>
 <!-- Navbar de filtros --> 
+
 
 
 
@@ -424,5 +430,6 @@
 
   </div>
   <script src="js/funcionalidad.js"></script>
+  <script src="js/funcionalidadnavegacion.js"></script>
 </body>
 </html>

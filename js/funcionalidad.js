@@ -1,8 +1,11 @@
-$(document).ready(function () {
+
+
+/*Filtros - JQuery*/ 
+
+
+$(document).ready(function () {  /* Su funcionalidad es la de ejecutar funciones una vez cargada en su totalidad una página web (DOM).*/ 
 
   $('.nav-filter-menu .filter-link[category = "0"]').addClass('filter-selected');
-
-  
   $('.filter-link').click (function() {
 
     let categoria = $(this).attr('category');
@@ -16,38 +19,67 @@ $(document).ready(function () {
     else {$('.producto').show();}
   
  });
- 
+
 
 })
 
-/*Toggle*/
+const iconobuscar= document.querySelector ('#icono-buscar');
+const productos = document.querySelectorAll ('.producto');
 
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector ('.nav-menu');
-const menufilter = document.querySelector('#mobile-filter-menu');
-const menuLinksfilter= document.querySelector ('.nav-filter-menu');
+
+function filtrar () {
+ for (let producto of productos) {
+   
+   producto.classList.add('oculto');
+   let nombre = producto.children[1].children[0].innerHTML.toLowerCase();
+   if (nombre.indexOf (buscar.value) !== -1) {
+     producto.classList.remove('oculto');
+    }
+
+
+ }
+
+}
+
 
 const buscar= document.querySelector ('#input-buscar');
 
 buscar.addEventListener("click", function() {
   buscar.style.outline="none";
   buscar.style.border = "thin solid orange";
+
+ });
+
+ 
+ buscar.addEventListener("keyup", function() {
+ 
+  filtrar ();
+
  });
 
 
-menu.addEventListener('click', function() {
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
-   
-});
+iconobuscar.addEventListener("click", function() {
+ 
+  filtrar ();
+
+ });
 
 
 
+
+
+//Toggle
+const menufilter = document.querySelector('#mobile-filter-menu');
+const menuLinksfilter= document.querySelector ('.nav-filter-menu');
+
+//Esperando los clicks
 menufilter.addEventListener('click', function() {
+
   menufilter.classList.toggle('is-active');
   menuLinksfilter.classList.toggle('active');
 
 });
+
 
 
 
