@@ -23,12 +23,15 @@ $(document).ready(function () {  /* Su funcionalidad es la de ejecutar funciones
 
 })
 
-const iconobuscar= document.querySelector ('#icono-buscar');
-const productos = document.querySelectorAll ('.producto');
 
+const buscar= document.querySelector ('#input-buscar');
 
 function filtrar () {
- for (let producto of productos) {
+  
+  const productos = document.querySelectorAll ('.producto');
+  
+  
+  for (let producto of productos) {
    
    producto.classList.add('oculto');
    let nombre = producto.children[1].children[0].innerHTML.toLowerCase();
@@ -42,7 +45,7 @@ function filtrar () {
 }
 
 
-const buscar= document.querySelector ('#input-buscar');
+
 
 buscar.addEventListener("click", function() {
   buscar.style.outline="none";
@@ -58,6 +61,7 @@ buscar.addEventListener("click", function() {
  });
 
 
+const iconobuscar= document.querySelector ('#icono-buscar');
 iconobuscar.addEventListener("click", function() {
  
   filtrar ();
