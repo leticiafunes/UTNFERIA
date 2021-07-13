@@ -91,8 +91,9 @@ function enviarMail() {
   localStorage.setItem ("carrito_storage", JSON.stringify(null));
   localStorage.setItem ("cant_productos_storage", JSON.stringify(0));
   localStorage.setItem ("total_storage", JSON.stringify(0));
+  window.location.reload(); 
   alert ("El mail con la lista de pedidos ha sido enviado al administrador del sistema");
-
+  
 }
 
 
