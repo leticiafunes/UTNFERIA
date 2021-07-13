@@ -28,7 +28,7 @@
 body {
   
   width: auto;
-  background-image: url("../Images/fondo.png");
+  background-image: url("../images/fondo.png");
   background-repeat: repeat;
   background-position: 0 0;
   min-width: 270px;
