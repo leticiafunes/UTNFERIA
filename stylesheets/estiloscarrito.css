@@ -7,7 +7,7 @@
   --terracota: rgb(238, 93, 9);
   --white: #fff;
   --green: #1eaa25;
-  --ligthgray: #b8b5b2;
+  --ligthgray: #e0dedc;
 }
 
 * {
@@ -376,8 +376,9 @@ body {
   text-decoration: none;
   text-align: center;
   line-height: 60px;
+  background-color: var(--gray);
+  color: var(--white);
  
-  background-color: var(--darkgray);
   padding: 6px 16px;
   padding-top: 10px;
   border-radius: 4px;
@@ -388,7 +389,6 @@ body {
 
 .btn-hacer-pedido:hover
 {
-  background: transparent;
   border: 1px solid var(--darkgray);
   background-color: var(--gray);
   color: var(--white);
@@ -396,7 +396,8 @@ body {
   padding-top: 9px;
   border-radius: 4px;
   transition: all 0.3s easy-out;
-
+  color: var(--darkgray);
+  background-color: var(--ligthgray);
 }
 
 

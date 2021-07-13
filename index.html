@@ -1,435 +1,594 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/estilos.css" rel="stylesheet" type="text/css">
-    <link href="css/estilosnavegacion.css" rel="stylesheet" type="text/css">
+    <title>titulo de inicio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100&amp;display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4a5d6c3d59.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
-    <title>Tienda</title>
+    <link href="/stylesheets/estilos.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/estilosnavegacion.css" rel="stylesheet" type="text/css">
+        
 
-</head>
-<body>
+ </head>
+ 
 
-  <div class="container">
+ <body>
 
-   <!-- Navbar -->
-   <div class="nav-container">
-    <nav class="navbar">
-        <h1 id="navbar-logo">
-            FERIA Cooperativa
-        </h1>
+  <div>
+  
+     <!-- Navbar -->
+        <div class="nav-container">
+         <nav class="navbar">
+           
+             <a class="navbar-logo" title="FERIA Cooperativa" href="index.html">FERIA Cooperativa</a>
+           
+     
+             <div class="menu-toggle" id="mobile-menu">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+             </div>
+             
+             
+           
+             <ul class="nav-menu">
+                 <li class="item-lista"><a href="nosotros.html" class="nav-links">Sobre el Proyecto</a></li>
+                 <li class="item-lista"><a href="emprendedores.html" class="nav-links">Emprendedores</a></li>
+                 <li class="item-lista"><a href="pedidos.html" class="nav-links">Pedidos del día</a></li>
+                 <li class="item-lista"><a href="login.html" class="nav-links nav-links-btn">Login</a></li>
+           
+             </ul>
+           
+             
+         </nav> 
+        </div>     
+  </div>
+  
+  <main>
+     
+ 
+ <div class="container">
 
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+
+
+<!-- Navbar de filtros -->
+   <div class="nav-filter-container">
+    <nav class="navbar-filter">
+      <div id="navbar-filter-logo">
+
+      </div>
+
+      <div class="btn-buscar">
+      
+        <input type="search" class="input-buscar" placeholder="Buscar" name="input-buscar" id="input-buscar">
+        
+        <div id="icono-buscar">
+             <i class="fas fa-search icono" aria-hidden="true"></i>
+              
+        </div>
+        
+   
+      
+      
+      </div>
+       
+        <div class="menu-filter-toggle" id="mobile-filter-menu">
+            <i class="fas fa-filter icono-filtro" id="icono-filtro" aria-hidden="true"></i>
+            <i class="far fa-times-circle icono-filtro-activo" id="icono-filtro-activo" aria-hidden="true"></i>
+           
         </div>
 
-        <ul class="nav-menu">
-            <li><a href="about.html" class="nav-links">Sobre el Proyecto</a></li>
-            <li><a href="misproductos.html" class="nav-links">Mis productos</a></li>
-            <li><a href="pedidos.html" class="nav-links">Pedidos del día</a></li>
-            <li><a href="login.html" class="nav-links nav-links-btn" >Login</a></li>
-      
-        </ul>
-      
+        <div class="nav-filter-menu">
+          <a href="#" category="0" class="filter-link filter-selected">Todos</a>
+          <a href="#" category="1" class="filter-link">Comestibles</a>
+          <a href="#" category="4" class="filter-link">Papelería</a>
+          <a href="#" category="6" class="filter-link">Servicios</a>
+          <a href="#" category="7" class="filter-link">Artesanías</a>
+          <a href="#" category="8" class="filter-link">Textiles</a>
+    
+        </div>
+
+ 
+
+
 
     </nav> 
    </div>
-<!-- Navbar --> 
-
-<!-- Navbar de filtros -->
-<div class="nav-filter-container">
-  <nav class="navbar-filter">
-    <div id="navbar-filter-logo">
-
-    </div>
-
-    <div class="btn-buscar">
-    
-      <input type="search" class="input-buscar" placeholder="Buscar" name="input-buscar" id="input-buscar" />
-      
-      <div id="icono-buscar">
-           <i class="fas fa-search icono" ></i>
-      </div>
-      
- 
-    
-    
-    </div>
-     
-      <div class="menu-filter-toggle" id="mobile-filter-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-      </div>
-
-      <div class="nav-filter-menu">
-        <a href="#" category="0" class=" filter-link">Todos</a>
-        <a href="#" category="1" class= "filter-link">Verdulería</a>
-        <a href="#" category="3" class= "filter-link">Envasados</a>
-        <a href="#" category="4" class= "filter-link">Papelería</a>
-        <a href="#" category="5" class= "filter-link">Amasados</a>
-        <a href="#" category="6" class= "filter-link">Servicios</a>
-  
-      </div>
-
-
-
-
-
-  </nav> 
- </div>
 <!-- Navbar de filtros --> 
 
 
+<div class="grid-row">
+
+ 
+
+   <!-- Productos --> 
 
 
-<!-- Productos --> 
-
-
-  <div class="grid-row">
-
-        <div class= "producto" category="1">
-           
-        <div class="prod-imagen">
-            
-                <img class= "imagen-grilla" src="Images/products/000100.jpg" alt="Producto en Stock">
-          
-        </div>
-        <div class="prod-desc">
-          <div class= "product-name">
-           <span class="text">Manzana</span>
-          </div>
-           
-         </div>
-         <div class="prod-subtotal">
-           <div class="subtotal">
-             <span class="subtotal__text-subtotal">$ 110</span>
-           </div>
-         </div>
-       
-         
-
-         <div class="prod-agregar">  
-            <button class="boton-agregar" onclick="agregarProducto(1,'Manzana',110)">
-                Agregar
-            </button>
-         </div>
-        </div> <!-- Producto-->
-        
-        <div class= "producto" category="1">
+    <div class="producto" loading="lazy" category="1">
            
           <div class="prod-imagen">
               
-                  <img class= "imagen-grilla" src="Images/products/00001.jpg" alt="Producto en Stock">
+                  <img class="imagen-grilla" src="Images/products/00003.jpg" alt="Producto en Stock">
             
           </div>
           <div class="prod-desc">
-            <div class= "product-name">
-             <span class="text">Cajón de Verdura</span>
+            <div class="product-name">
+             Cajón de Verdura
             </div>
              
            </div>
            <div class="prod-subtotal">
              <div class="subtotal">
-               <span class="subtotal__text-subtotal">$ 650</span>
+               <span class="subtotal__text-subtotal">$ 1300</span>
              </div>
            </div>
            <div class="prod-agregar">  
-              <button class="boton-agregar" onclick="agregarProducto(2,'Cajón de Verdura',650)">
+              <button class="boton-agregar" onclick="agregarProducto(11,'Cajón de Verdura',1300, 1)">
                   Agregar
               </button>
-           </div>
 
+ 
+           </div>
+           
 
-
-        </div> <!-- Producto-->
-      
-          <div class= "producto" category = "1">
-           
-            <div class="prod-imagen">
-                
-                    <img class= "imagen-grilla" src="Images/products/000101.jpg" alt="Producto en Stock">
-              
-            </div>
-            <div class="prod-desc">
-              <div class= "product-name">
-               <span class="text">Naranja</span>
-              </div>
-               
-             </div>
-             <div class="prod-subtotal">
-               <div class="subtotal">
-                 <span class="subtotal__text-subtotal">$ 70</span>
-               </div>
-             </div>
-             <div class="prod-agregar">  
-                <button class="boton-agregar" onclick="agregarProducto(3,'Naranja',70)">
-                    Agregar
-                </button>
-             </div>
-        </div> <!-- Producto-->
-        
-          
-        <div class= "producto" category="3">
-           
-          <div class="prod-imagen">
-              
-                  <img class= "imagen-grilla" src="Images/products/000202.jpg" alt="Producto en Stock">
-            
-          </div>
-          <div class="prod-desc">
-            <div class= "product-name">
-             <span class="text">Salsa</span>
-            </div>
-             
-           </div>
-           <div class="prod-subtotal">
-             <div class="subtotal">
-               <span class="subtotal__text-subtotal">$ 300</span>
-             </div>
-           </div>
-           <div class="prod-agregar">  
-              <button class="boton-agregar" onclick="agregarProducto(4,'Salsa',300)">
-                  Agregar
-              </button>
-           </div>
-      </div> <!-- Producto-->
-      <div class= "producto" category = "3">
-           
-        <div class="prod-imagen">
-            
-                <img class= "imagen-grilla" src="Images/products/000201.jpg" alt="Producto en Stock">
-          
-        </div>
-        <div class="prod-desc">
-          <div class= "product-name">
-           <span class="text">Miel pura</span>
-          </div>
-           
-         </div>
-         <div class="prod-subtotal">
-           <div class="subtotal">
-             <span class="subtotal__text-subtotal">$ 650</span>
-           </div>
-         </div>
-         <div class="prod-agregar">  
-            <button class="boton-agregar" onclick="agregarProducto(5,'Miel',650)">
-                Agregar
-            </button>
-         </div>
     </div> <!-- Producto-->
-    <div class= "producto" category = "3">
-           
-      <div class="prod-imagen">
-          
-              <img class= "imagen-grilla" src="Images/products/000200.jpg" alt="Producto en Stock">
-        
-      </div>
-      <div class="prod-desc">
-        <div class= "product-name">
-         <span class="text">Dulce de fruta</span>
-        </div>
-         
-       </div>
-       <div class="prod-subtotal">
-         <div class="subtotal">
-           <span class="subtotal__text-subtotal">$ 340</span>
-         </div>
-       </div>
-       <div class="prod-agregar">  
-          <button class="boton-agregar" onclick="agregarProducto(6,'Dulce de Fruta',340)">
-              Agregar
-          </button>
-       </div>
-      </div> <!-- Producto-->
-      
-      <div class= "producto" category="1">
-           
-        <div class="prod-imagen">
-            
-                <img class= "imagen-grilla" src="Images/products/000100.jpg" alt="Producto en Stock">
-          
-        </div>
-        <div class="prod-desc">
-          <div class= "product-name">
-           <span class="text">Manzana</span>
-          </div>
-           
-         </div>
-         <div class="prod-subtotal">
-           <div class="subtotal">
-             <span class="subtotal__text-subtotal">$ 110</span>
-           </div>
-         </div>
-       
-         
 
-         <div class="prod-agregar">  
-            <button class="boton-agregar" onclick="agregarProducto(1,'Manzana',110)">
-                Agregar
-            </button>
-         </div>
-        </div> <!-- Producto-->
-        
-        <div class= "producto" category="1">
+
+ 
+
+   <!-- Productos --> 
+
+
+    <div class="producto" loading="lazy" category="1">
            
           <div class="prod-imagen">
               
-                  <img class= "imagen-grilla" src="Images/products/00001.jpg" alt="Producto en Stock">
+                  <img class="imagen-grilla" src="Images/products/000100.jpg" alt="Producto en Stock">
             
           </div>
           <div class="prod-desc">
-            <div class= "product-name">
-             <span class="text">Cajón de Verdura</span>
+            <div class="product-name">
+             Manzana
             </div>
              
            </div>
            <div class="prod-subtotal">
              <div class="subtotal">
-               <span class="subtotal__text-subtotal">$ 650</span>
+               <span class="subtotal__text-subtotal">$ 400</span>
              </div>
            </div>
            <div class="prod-agregar">  
-              <button class="boton-agregar" onclick="agregarProducto(2,'Cajón de Verdura',650)">
+              <button class="boton-agregar" onclick="agregarProducto(12,'Manzana',400, 1)">
                   Agregar
               </button>
-           </div>
 
+ 
+           </div>
+           
 
-
-        </div> <!-- Producto-->
-      
-          <div class= "producto" category = "1">
-           
-            <div class="prod-imagen">
-                
-                    <img class= "imagen-grilla" src="Images/products/000101.jpg" alt="Producto en Stock">
-              
-            </div>
-            <div class="prod-desc">
-              <div class= "product-name">
-               <span class="text">Naranja</span>
-              </div>
-               
-             </div>
-             <div class="prod-subtotal">
-               <div class="subtotal">
-                 <span class="subtotal__text-subtotal">$ 70</span>
-               </div>
-             </div>
-             <div class="prod-agregar">  
-                <button class="boton-agregar" onclick="agregarProducto(3,'Naranja',70)">
-                    Agregar
-                </button>
-             </div>
-        </div> <!-- Producto-->
-        
-          
-        <div class= "producto" category="3">
-           
-          <div class="prod-imagen">
-              
-                  <img class= "imagen-grilla" src="Images/products/000202.jpg" alt="Producto en Stock">
-            
-          </div>
-          <div class="prod-desc">
-            <div class= "product-name">
-             <span class="text">Salsa</span>
-            </div>
-             
-           </div>
-           <div class="prod-subtotal">
-             <div class="subtotal">
-               <span class="subtotal__text-subtotal">$ 300</span>
-             </div>
-           </div>
-           <div class="prod-agregar">  
-              <button class="boton-agregar" onclick="agregarProducto(4,'Salsa',300)">
-                  Agregar
-              </button>
-           </div>
-      </div> <!-- Producto-->
-      <div class= "producto" category = "3">
-           
-        <div class="prod-imagen">
-            
-                <img class= "imagen-grilla" src="Images/products/000201.jpg" alt="Producto en Stock">
-          
-        </div>
-        <div class="prod-desc">
-          <div class= "product-name">
-           <span class="text">Miel pura</span>
-          </div>
-           
-         </div>
-         <div class="prod-subtotal">
-           <div class="subtotal">
-             <span class="subtotal__text-subtotal">$ 650</span>
-           </div>
-         </div>
-         <div class="prod-agregar">  
-            <button class="boton-agregar" onclick="agregarProducto(5,'Miel',650)">
-                Agregar
-            </button>
-         </div>
     </div> <!-- Producto-->
-    <div class= "producto" category = "3">
+
+
+ 
+
+   <!-- Productos --> 
+
+
+    <div class="producto" loading="lazy" category="1">
            
-      <div class="prod-imagen">
-          
-              <img class= "imagen-grilla" src="Images/products/000200.jpg" alt="Producto en Stock">
-        
-      </div>
-      <div class="prod-desc">
-        <div class= "product-name">
-         <span class="text">Dulce de fruta</span>
-        </div>
-         
-       </div>
-       <div class="prod-subtotal">
-         <div class="subtotal">
-           <span class="subtotal__text-subtotal">$ 340</span>
-         </div>
-       </div>
-       <div class="prod-agregar">  
-          <button class="boton-agregar" onclick="agregarProducto(6,'Dulce de Fruta',340)">
-              Agregar
-          </button>
-       </div>
-      </div> <!-- Producto-->
-     
-   
+          <div class="prod-imagen">
+              
+                  <img class="imagen-grilla" src="Images/products/000101.jpg" alt="Producto en Stock">
+            
+          </div>
+          <div class="prod-desc">
+            <div class="product-name">
+             Naranjas
+            </div>
+             
+           </div>
+           <div class="prod-subtotal">
+             <div class="subtotal">
+               <span class="subtotal__text-subtotal">$ 500</span>
+             </div>
+           </div>
+           <div class="prod-agregar">  
+              <button class="boton-agregar" onclick="agregarProducto(13,'Naranjas',500, 1)">
+                  Agregar
+              </button>
 
-   
-  </div>  
+ 
+           </div>
+           
 
-<!-- Fin Productos --> 
+    </div> <!-- Producto-->
 
-  <!-- Carrito --> 
+
+ 
+
+   <!-- Productos --> 
+
+
+    <div class="producto" loading="lazy" category="1">
+           
+          <div class="prod-imagen">
+              
+                  <img class="imagen-grilla" src="Images/products/000200.jpg" alt="Producto en Stock">
+            
+          </div>
+          <div class="prod-desc">
+            <div class="product-name">
+             Dulce
+            </div>
+             
+           </div>
+           <div class="prod-subtotal">
+             <div class="subtotal">
+               <span class="subtotal__text-subtotal">$ 350</span>
+             </div>
+           </div>
+           <div class="prod-agregar">  
+              <button class="boton-agregar" onclick="agregarProducto(14,'Dulce',350, 1)">
+                  Agregar
+              </button>
+
+ 
+           </div>
+           
+
+    </div> <!-- Producto-->
+
+
+ 
+
+   <!-- Productos --> 
+
+
+    <div class="producto" loading="lazy" category="1">
+           
+          <div class="prod-imagen">
+              
+                  <img class="imagen-grilla" src="Images/products/000201.jpg" alt="Producto en Stock">
+            
+          </div>
+          <div class="prod-desc">
+            <div class="product-name">
+             Miel
+            </div>
+             
+           </div>
+           <div class="prod-subtotal">
+             <div class="subtotal">
+               <span class="subtotal__text-subtotal">$ 450</span>
+             </div>
+           </div>
+           <div class="prod-agregar">  
+              <button class="boton-agregar" onclick="agregarProducto(15,'Miel',450, 1)">
+                  Agregar
+              </button>
+
+ 
+           </div>
+           
+
+    </div> <!-- Producto-->
+
+
+ 
+
+   <!-- Productos --> 
+
+
+    <div class="producto" loading="lazy" category="1">
+           
+          <div class="prod-imagen">
+              
+                  <img class="imagen-grilla" src="Images/products/000202.jpg" alt="Producto en Stock">
+            
+          </div>
+          <div class="prod-desc">
+            <div class="product-name">
+             Salsa
+            </div>
+             
+           </div>
+           <div class="prod-subtotal">
+             <div class="subtotal">
+               <span class="subtotal__text-subtotal">$ 200</span>
+             </div>
+           </div>
+           <div class="prod-agregar">  
+              <button class="boton-agregar" onclick="agregarProducto(16,'Salsa',200, 1)">
+                  Agregar
+              </button>
+
+ 
+           </div>
+           
+
+    </div> <!-- Producto-->
+
+
+ 
+
+   <!-- Productos --> 
+
+
+    <div class="producto" loading="lazy" category="7">
+           
+          <div class="prod-imagen">
+              
+                  <img class="imagen-grilla" src="Images/products/000300.jpg" alt="Producto en Stock">
+            
+          </div>
+          <div class="prod-desc">
+            <div class="product-name">
+             Chrapelacucha de alpaca
+            </div>
+             
+           </div>
+           <div class="prod-subtotal">
+             <div class="subtotal">
+               <span class="subtotal__text-subtotal">$ 5000</span>
+             </div>
+           </div>
+           <div class="prod-agregar">  
+              <button class="boton-agregar" onclick="agregarProducto(24,'Chrapelacucha de alpaca',5000, 1)">
+                  Agregar
+              </button>
+
+ 
+           </div>
+           
+
+    </div> <!-- Producto-->
+
+
+ 
+
+   <!-- Productos --> 
+
+
+    <div class="producto" loading="lazy" category="7">
+           
+          <div class="prod-imagen">
+              
+                  <img class="imagen-grilla" src="Images/products/000301.jpg" alt="Producto en Stock">
+            
+          </div>
+          <div class="prod-desc">
+            <div class="product-name">
+             Tupo de alpaca
+            </div>
+             
+           </div>
+           <div class="prod-subtotal">
+             <div class="subtotal">
+               <span class="subtotal__text-subtotal">$ 5000</span>
+             </div>
+           </div>
+           <div class="prod-agregar">  
+              <button class="boton-agregar" onclick="agregarProducto(25,'Tupo de alpaca',5000, 1)">
+                  Agregar
+              </button>
+
+ 
+           </div>
+           
+
+    </div> <!-- Producto-->
+
+
+ 
+
+   <!-- Productos --> 
+
+
+    <div class="producto" loading="lazy" category="8">
+           
+          <div class="prod-imagen">
+              
+                  <img class="imagen-grilla" src="Images/products/000800.jpg" alt="Producto en Stock">
+            
+          </div>
+          <div class="prod-desc">
+            <div class="product-name">
+             Medias Tejidas
+            </div>
+             
+           </div>
+           <div class="prod-subtotal">
+             <div class="subtotal">
+               <span class="subtotal__text-subtotal">$ 500</span>
+             </div>
+           </div>
+           <div class="prod-agregar">  
+              <button class="boton-agregar" onclick="agregarProducto(26,'Medias Tejidas',500, 1)">
+                  Agregar
+              </button>
+
+ 
+           </div>
+           
+
+    </div> <!-- Producto-->
+
+
+ 
+
+   <!-- Productos --> 
+
+
+    <div class="producto" loading="lazy" category="8">
+           
+          <div class="prod-imagen">
+              
+                  <img class="imagen-grilla" src="Images/products/000801.jpg" alt="Producto en Stock">
+            
+          </div>
+          <div class="prod-desc">
+            <div class="product-name">
+             Gorro y Cuello
+            </div>
+             
+           </div>
+           <div class="prod-subtotal">
+             <div class="subtotal">
+               <span class="subtotal__text-subtotal">$ 500</span>
+             </div>
+           </div>
+           <div class="prod-agregar">  
+              <button class="boton-agregar" onclick="agregarProducto(27,'Gorro y Cuello',500, 1)">
+                  Agregar
+              </button>
+
+ 
+           </div>
+           
+
+    </div> <!-- Producto-->
+
+
+ 
+
+   <!-- Productos --> 
+
+
+    <div class="producto" loading="lazy" category="8">
+           
+          <div class="prod-imagen">
+              
+                  <img class="imagen-grilla" src="Images/products/000802.jpg" alt="Producto en Stock">
+            
+          </div>
+          <div class="prod-desc">
+            <div class="product-name">
+             Carpa Tippi
+            </div>
+             
+           </div>
+           <div class="prod-subtotal">
+             <div class="subtotal">
+               <span class="subtotal__text-subtotal">$ 6500</span>
+             </div>
+           </div>
+           <div class="prod-agregar">  
+              <button class="boton-agregar" onclick="agregarProducto(28,'Carpa Tippi',6500, 1)">
+                  Agregar
+              </button>
+
+ 
+           </div>
+           
+
+    </div> <!-- Producto-->
+
+
+ 
+
+   <!-- Productos --> 
+
+
+    <div class="producto" loading="lazy" category="6">
+           
+          <div class="prod-imagen">
+              
+                  <img class="imagen-grilla" src="Images/products/000804.jpg" alt="Producto en Stock">
+            
+          </div>
+          <div class="prod-desc">
+            <div class="product-name">
+             Alquiler de Carpas Tipis
+            </div>
+             
+           </div>
+           <div class="prod-subtotal">
+             <div class="subtotal">
+               <span class="subtotal__text-subtotal">$ 4000</span>
+             </div>
+           </div>
+           <div class="prod-agregar">  
+              <button class="boton-agregar" onclick="agregarProducto(29,'Alquiler de Carpas Tipis',4000, 1)">
+                  Agregar
+              </button>
+
+ 
+           </div>
+           
+
+    </div> <!-- Producto-->
+
+
+ 
+
+   <!-- Productos --> 
+
+
+    <div class="producto" loading="lazy" category="4">
+           
+          <div class="prod-imagen">
+              
+                  <img class="imagen-grilla" src="Images/products/000400.jpg" alt="Producto en Stock">
+            
+          </div>
+          <div class="prod-desc">
+            <div class="product-name">
+             Cuaddernos Artesanales
+            </div>
+             
+           </div>
+           <div class="prod-subtotal">
+             <div class="subtotal">
+               <span class="subtotal__text-subtotal">$ 400</span>
+             </div>
+           </div>
+           <div class="prod-agregar">  
+              <button class="boton-agregar" onclick="agregarProducto(30,'Cuaddernos Artesanales',400, 1)">
+                  Agregar
+              </button>
+
+ 
+           </div>
+           
+
+    </div> <!-- Producto-->
+
+
+  
+
+</div>
+
+<!-- Carrito --> 
 
    
   <div class="carrito-container">
-      <div class= "cant-productos-container">
-        <i class="fas fa-shopping-cart"></i> 
-        <span class="text" id="label-cant-productos">Cant. Prod. : 0</span>
+      <div class="cant-productos-container">
+        <i class="fas fa-shopping-cart" aria-hidden="true"></i> 
+        <span class="text" id="label-cant-productos">Cant.: 0 - Total: $ 0</span>
       </div>
-      <div class= "cant-productos-container-ver"> 
-        <a href="carrito.html" id="ver-pedido" >Pedido</a>
+      <div class="cant-productos-container-ver"> 
+        <a href="carrito.html" id="ver-pedido">Pedido</a>
       </div>
   </div>
 
+
+
+  <i class="fas fa-arrow-circle-up ir-arriba" aria-hidden="true"></i>
     <!-- Fin Carrito --> 
 
-  </div>
-  <script src="js/funcionalidad.js"></script>
-  <script src="js/funcionalidadnavegacion.js"></script>
-</body>
-</html>
+<!-- Fin Productos -->   <!--Por defecto trae lo que hay en la pagina index.hbs-->
+  </div></main>
+
+
+
+  <footer>
+       <script src="../javascripts/funcionalidadnavegacion.js"></script>
+       <script src="../javascripts/funcionalidad.js"></script>
+       
+     
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>  </footer>
+  
+  </body></html>

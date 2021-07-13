@@ -17,21 +17,42 @@ $(document).ready(function () {  /* Su funcionalidad es la de ejecutar funciones
 
     if (categoria != "0") {$('.producto[category="'+categoria+'"]').show();}
     else {$('.producto').show();}
+
+
   
  });
+   
+ /*Botón que lleva arriba de la pantalla*/
+
+   $('.ir-arriba').click(function(){
+    $('body, html').animate({
+    scrollTop: '0px'
+    }, 300);
+   });
+
+   $(window).scroll(function(){
+   if( $(this).scrollTop() > 0 ){
+    $('.ir-arriba').slideDown(300);
+    } else {
+     $('.ir-arriba').slideUp(300);
+    }
+    });
 
 
 })
 
 
-const buscar= document.querySelector ('#input-buscar');
+
+
+
+
+
+const iconobuscar= document.querySelector ('#icono-buscar');
+const productos = document.querySelectorAll ('.producto');
+
 
 function filtrar () {
-  
-  const productos = document.querySelectorAll ('.producto');
-  
-  
-  for (let producto of productos) {
+ for (let producto of productos) {
    
    producto.classList.add('oculto');
    let nombre = producto.children[1].children[0].innerHTML.toLowerCase();
@@ -45,7 +66,7 @@ function filtrar () {
 }
 
 
-
+const buscar= document.querySelector ('#input-buscar');
 
 buscar.addEventListener("click", function() {
   buscar.style.outline="none";
@@ -61,7 +82,6 @@ buscar.addEventListener("click", function() {
  });
 
 
-const iconobuscar= document.querySelector ('#icono-buscar');
 iconobuscar.addEventListener("click", function() {
  
   filtrar ();
@@ -207,3 +227,12 @@ function leerStorage (carrito) {
   }
 }
 
+
+
+window.addEventListener("scroll", function() {
+                                            //
+  const scrollable = document.documentElement.scrollHeight - this.window.innerHeight; //alturadel viewreport
+  const cant_scroll =  window.scrollY;
+  console.log ('scrollHeight : ' + document.documentElement.scrollHeight + ' /br this.window.innerHeight' + this.window.innerHeight+' /br Scrollable: ' +  scrollable + ' ' + " /br cant_scroll : " + cant_scroll );
+
+ });

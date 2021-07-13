@@ -1,0 +1,52 @@
+:root {
+    --darkgray: #242220;
+    --gray: #978b7b;
+    --orange: #ff9000;
+    --cian: #037c03;
+    --yellow: #dca305;
+    --terracota: rgb(238, 93, 9);
+    --white: #fff;
+    --green: #1eaa25;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-indent: 0;
+    font-family: 'Manjari', sans-serif;   
+ 
+  }
+  
+  
+  body {
+    
+    background-image: url("../images/fondo.png");
+    background-repeat: repeat;
+    background-position: 0 0;
+    line-height: 1.42857143;
+    color: #878787;
+   
+  }
+  
+  .contenedor{
+    display: grid;
+    grid-template-columns: 3fr 0.1fr;
+    margin: auto;
+    width: 95%;
+    background: var(--gray);
+    width: 95%;
+    border-radius: 5px;
+    color: var(--white);
+    position: relative;
+    padding-bottom: 25px;
+    margin-top: 20px; 
+  }
+
+.header-tittle {
+    padding: 5px;
+    text-align: left;
+    font-weight: 100;
+    font-size:larger;  
+}
+

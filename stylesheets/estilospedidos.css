@@ -193,7 +193,9 @@ body {
 }
 
 
-
+.oculto {
+  display: none
+}
 
 
 
@@ -367,15 +369,12 @@ body {
 }
 
 
+
+
 #total {
   display: none;
 }
 
-#totalarriba {
-  background: var(--gray);
-  color: var(--white);
-  margin-right: 5px;;
-}
 
 .btn-hacer-pedido{
  
@@ -385,7 +384,6 @@ body {
   text-decoration: none;
   text-align: center;
   line-height: 60px;
- 
   background-color: var(--orange);
   padding: 6px 16px;
   padding-top: 10px;
@@ -420,8 +418,51 @@ body {
   border: 1px solid var(--darkgray);
 }
 
+.contenedor_boton_mail {
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.btn_mail {
+  border: none;
+
+  transition: all 0.4s easy-out;
+  background: var(--orange);
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  background-color: var(--orange);
+  padding: 10px 20px;
+  border-radius: 4px;
+  
+}
 
 
+.btn_mail:hover
+{
+  background: var(--ligthgray);
+  border: 1px solid var(--darkgray);
+
+}
+
+
+.totalarriba {
+
+  border: none;
+  transition: all 0.4s easy-out;
+  background: var(--gray);
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 5px;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
 
 
 @media screen and (min-width: 768px){  

@@ -42,25 +42,37 @@ body {
 
 .container {
   width: auto;
-  margin-bottom: 30px;
+  margin-bottom: 30px;  
+  background: var(--white);
 }
 
 
+.ir-arriba {
+	display:none;
+	padding:10px;
+	background: var(--darkgray);
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+  border-radius: 20px;  
+}
+
+
+
 #ver-pedido {
-
-
     color: var(--white);
     padding: 4px 14px;
     padding-top: 11px;
     border-radius: 4px;
     transition: all 0.3s easy-out;
-    background: var(darkgray);
+    background: var(--darkgray);
     text-decoration: none;
-
 }
 
 #ver-pedido:hover{
-
   background: var(--ligthgray);
   color: var(--white);
 }
@@ -99,27 +111,6 @@ body {
 }
 
 
-#mobile-menu {  
-  position: absolute;
-  top:20%;
-  right: 5%;
-  transform: translate(5%, 20%);
-}
-
-#mobile-menu.is-active .bar:nth-child(2){
-  opacity: 0;
-}
-
-#mobile-menu.is-active .bar:nth-child(1){
-
-  transform: translateY(8px) rotate(45deg);
-}
-
-#mobile-menu.is-active .bar:nth-child(3){
-
-  transform: translateY(-8px) rotate(-45deg);
-}
-
 .menu-toggle .bar{
   width: 25px;
   height: 3px;
@@ -150,17 +141,11 @@ body {
     transition: all 0.4s easy-out;
   }
 
-
-
-
-
 /*Filtros*/
 
 .nav-filter-container { 
   width: 100%;
-
-  background-color: var(--ligthgray);
-  
+  background-color: var(--ligthgray);  
 }
 
 .navbar-filter {
@@ -197,9 +182,6 @@ body {
   transition: all 0.5s ease;
   width: 110px;
   left: -100%;
-  
-  
-
   background-color: var(--gray);
 
 }
@@ -240,38 +222,6 @@ body {
 }
 
 
-#mobile-filter-menu {  
-  position: absolute;
-  top:20%;
-  right: 5%;
-  transform: translate(5%, 20%);
-}
-
-.menu-filter-toggle .bar{
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.3s easy-in-out;
-  background: var(--white);
-  display: none;
-  cursor: none;
-}
-
-
-#mobile-filter-menu.is-active .bar:nth-child(2){
-  opacity: 0;
-}
-
-#mobile-filter-menu.is-active .bar:nth-child(1){
-  transform: translateY(8px) rotate(45deg);
-}
-
-#mobile-filter-menu.is-active .bar:nth-child(3){
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-
-
 
 
 
@@ -308,11 +258,41 @@ body {
 
 
 
+#mobile-filter-menu {  
+  position: absolute;
+  top:20%;
+  right: 5%;
+  transform: translate(5%, 20%);
+}
+
+#mobile-filter-menu.is-active #icono-filtro-activo{
+  display:block;
+}
+
+#mobile-filter-menu.is-active #icono-filtro{
+  display:none;
+}
+
+
+.icono-filtro {
+  color: var( --white);
+  font-size: 20px;
+}
+
+
+.icono-filtro-activo {
+  color: var( --white);
+  font-size: 20px;
+  display:none;
+  
+}
+
+
 .nav-filter-menu.active {
 
   background: var(--gray);
   left: 0;
-  opacity: 1;
+  opacity: 0.8;
   transition: all 0.5s easy;
   top: 150px;
  
@@ -407,7 +387,7 @@ body {
   flex-wrap: wrap;
   margin: 5px;
   margin-bottom: 40px;
-  row-gap: 20px;
+  row-gap: 30px;
 }
 
 .producto {  
@@ -428,13 +408,15 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 5px;
+ 
+
     
    }
 
    .imagen-grilla {
+  
     width: 100%;
     height: 100%;
-   
     object-fit: cover;
 
    }
@@ -457,8 +439,8 @@ body {
     font-weight: 400;
     color: #333;
     min-width: 50px;
-    width: 90%;
-    background: var(--white);
+    width: 95%;
+    background: transparent;
     padding: 5px;
     text-align: center;
     
@@ -525,6 +507,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-bottom: 1px solid var(--ligthgray);
     
   }
 
@@ -543,6 +526,8 @@ body {
     font-size: 15px;
     text-align: center;
     width: 50%;
+    margin-bottom: 10px;
+   
   }
 
 
@@ -680,6 +665,18 @@ body {
   
   @media screen and (min-width: 768px) {
 
+
+    .icono-filtro {
+      display:none;
+    }
+    
+    
+    .icono-filtro-activo {
+    
+      display:none;
+      
+    }
+
     .producto {    
       width: 20% ;      
     }
@@ -705,7 +702,7 @@ body {
       opacity: 1;
       position: static;
       background-color: var(--ligthgray);
-      width: 90%;
+      width: auto;
          
    
     }
@@ -737,10 +734,7 @@ body {
   
   }
   
-  .menu-toggle .bar {
-    display: none;
-  
-  }
+ 
   .menu-filter-toggle .bar {
     display: none;
    
@@ -761,7 +755,7 @@ body {
 .filter-link {
   color: var(--white);
   text-decoration: none;
-  width: 100%;
+  width: auto;
   display:inline;
   background: var(--ligthgray);
   min-width: 80px;
@@ -770,7 +764,7 @@ body {
   
   
   
-  }
+  
 
    @media screen and (min-width: 991px){
   

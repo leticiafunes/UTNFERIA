@@ -1,16 +1,4 @@
 
-/*Toggle*/
-
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector ('.nav-menu');
-
-
-menu.addEventListener('click', function() {
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
-   
-});
-
 let cantidad_productos_carrito;
 let carrito_con_productos;
 let monto_total;
@@ -47,7 +35,7 @@ function mostrarProductosCarrito () {
   if (carrito_con_productos) {
       
       let listado = 'Productos del Carrito: ' + cantidad_productos_carrito  + "<br>";
-      contenedorProductos.innerHTML = listado;
+      
 
       carrito_con_productos.forEach(function(elementoCarrito){
       listado += elementoCarrito.cantidad + " - "  + elementoCarrito.nombre + ' ' + ': $ ' + elementoCarrito.precio + "<br>";
@@ -55,6 +43,7 @@ function mostrarProductosCarrito () {
       });
       
       contenedorProductos.innerHTML =   listado;
+      console.log ('Carritoooo: ' + listado);
      
      
   }
@@ -78,10 +67,11 @@ function grabarPedido () {
   var resultado = window.confirm('Está seguro que quiere grabar este pedido?');
   if (resultado === true) {
     const usuario= "Leticia Funes";
-    let pedidos;
+    let pedidos=" ";
     pedidos = JSON.parse(localStorage.getItem ("pedidos_storage"));
+              
 
-
+    console.log ('pedidos: ' + pedidos);
     let timeNow = new Date();
     
     // Queremos que la hora se muestre siempre con 2 dígitos. Para eso, hacemos lo siguiente:
