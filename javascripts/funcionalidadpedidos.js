@@ -1,18 +1,3 @@
-
-/*Toggle*/
-
-const menu_mobile = document.querySelector('#mobile-menu');
-const menuLinks_mobile = document.querySelector ('.nav-menu');
-
-
-menu_mobile.addEventListener('click', function() {
-    menu_mobile.classList.toggle('is-active');
-    menuLinks_mobile.classList.toggle('active');
-   
-});
-
-
-
 let cantidad_pedidos;
 let pedidos;
 let monto_total_pedidos;
