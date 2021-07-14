@@ -173,7 +173,7 @@ function agregarProducto (id_producto, producto_nombre, producto_precio, cantida
   localStorage.setItem ("total_storage", monto_total.toString());
   const cant_produ= document.getElementById("label-cant-productos");
 
-  cant_produ.innerHTML =  "Cant. Prod: " +  cantidad_productos_carrito + " - Total: " + monto_total;
+  cant_produ.innerHTML =  "Cant. Prod: " +  cantidad_productos_carrito + " - Total: $" + monto_total;
   
 }
 

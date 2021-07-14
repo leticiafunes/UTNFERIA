@@ -36,7 +36,7 @@ function mostrarPedidos () {
       let total=0;
      
       pedidos.forEach(function(pedido){
-        listado += " - Cant. productos: " + pedido.cant_productos + " - Monto del Pedido: "  +  pedido.total_pedido + "<br>";
+        listado += " - Cant. productos: " + pedido.cant_productos + " - Monto del Pedido: $ "  +  pedido.total_pedido + "<br>";
         cantidad += 1; 
         total += pedido.total_pedido; 
       });

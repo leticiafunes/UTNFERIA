@@ -19,6 +19,17 @@ buscar.addEventListener("focus", function() {
   buscar.style.border = "thin solid gray";
 
  });
+
+ buscar.addEventListener("change", function() {
+ 
+  filtrar ();
+
+ });
+ buscar.addEventListener("input", function() {
+ 
+  filtrar ();
+
+ });
  
  buscar.addEventListener("keyup", function() {
  

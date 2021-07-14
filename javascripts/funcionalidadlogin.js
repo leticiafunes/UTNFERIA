@@ -1,6 +1,6 @@
 function login(event) {
      
-    alert ('Usuario inválido en el sistema');
+    alert ('Usuario no válido en el sistema');
 
 }
 
