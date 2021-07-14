@@ -73,6 +73,11 @@ buscar.addEventListener("click", function() {
   buscar.style.border = "thin solid orange";
 
  });
+ buscar.addEventListener("change", function() {
+ 
+  filtrar ();
+
+ });
 
  
  buscar.addEventListener("keyup", function() {
