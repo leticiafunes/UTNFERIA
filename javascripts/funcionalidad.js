@@ -56,7 +56,7 @@ function filtrar () {
    
    producto.classList.add('oculto');
    let nombre = producto.children[1].children[0].innerHTML.toLowerCase();
-   if (nombre.indexOf (buscar.value) !== -1) {
+   if (nombre.indexOf (buscar.value.toLowerCase()) !== -1) {
      producto.classList.remove('oculto');
     }
 

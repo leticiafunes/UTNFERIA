@@ -106,7 +106,7 @@ function filtrar () {
       console.log ('Emprendedor: ' + emprendedor);
       let rubro = emprendedor.children[2].innerText.toLowerCase();
       
-      if (rubro.indexOf (buscar.value) !== -1) {
+      if (rubro.indexOf (buscar.value.toLowerCase()) !== -1) {
         emprendedor.classList.remove('oculto');
        }
    
