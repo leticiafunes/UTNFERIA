@@ -192,7 +192,6 @@ body {
 
 
 
-
 @media screen and (min-width: 768px) {
 
   .nav-container {
@@ -413,6 +412,7 @@ body {
   display:flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .btn_mail {
